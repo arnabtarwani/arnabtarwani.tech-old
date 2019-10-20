@@ -1,0 +1,178 @@
+<template>
+  <div class="container">
+    <div class="navbar">
+      <b-navbar-brand class="mb-0">
+        <a href="/">
+          <b-img id="logo" src="~assets/arnab31png.png" fluid />
+        </a>
+      </b-navbar-brand>
+    </div>
+    <!-- <div class="nav-items">
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar toggleable="lg" variant="faded" type="dark">
+        <b-collapse id="nav-collapse" is-nav>
+          <b-nav-item>
+            <nuxt-link to="/about">about</nuxt-link></b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/blog">blog</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/projects">projects</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/contact">contact</nuxt-link>
+          </b-nav-item>
+        </b-collapse>
+      </b-navbar>
+    </div>-->
+    <div class="profile-card">
+      <p style="font-size: 2.5em;">
+        hi, welcome!
+        <span class="wave">🖐</span>
+      </p>
+      <p style="font-size: 2.5em; margin-top: 3vh;">
+        i'm
+        <b style="color:#FF3900;">arnab tarwani</b>, a data analyst/scientist
+        with a passion for data. Also, a web enthusiast and a developer in the
+        making. want to get in touch?
+      </p>
+    </div>
+    <div class="social text-left" style="margin-top: 5vh;">
+      <p style="font-size: 2em;">
+        follow me on
+        <img src="~assets/arrow.png" alt="arrow" style="width: 25px;" />
+      </p>
+      <a href="https://medium.com/@arnab.tarwani">
+        <img src="~assets/medium-color.png" alt="Medium" />
+      </a>
+      <a href="https://github.com/arnabtarwani">
+        <img src="~assets/github-logo.png" alt="Github" />
+      </a>
+      <a href="https://www.linkedin.com/in/arnabtarwani/">
+        <img src="~assets/linkedin-logo (2).png" alt="LinkedIn" />
+      </a>
+      <a href="https://twitter.com/arnabtarwani">
+        <img src="~assets/twitter (1).png" alt="Twitter" />
+      </a>
+      <a href="https://instagram.com/arnabtarwani">
+        <img src="~assets/instagram.png" alt="Instagram" />
+      </a>
+      <a href="mailto:arnab.tarwani@ucdconnect.ie">
+        <img src="~assets/email.png" alt="Email" />
+      </a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style>
+.container {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  text-align: center;
+  min-height: 25vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-items {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+  color: #ff370075;
+  font-size: 2em;
+}
+
+.profile-card {
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+  width: 75%;
+  font-feature-settings: 'abvs';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 10px #000;
+  /* box-shadow: 0.2px 3px 5px rgba(0, 0, 0, 0.19),
+    0px 0.5px 0.5px rgba(0, 0, 0, 0.23); */
+}
+
+.profile-text {
+  box-shadow: 0.2px 3px 5px rgba(0, 0, 0, 0.19),
+    0px 0.5px 0.5px rgba(0, 0, 0, 0.23);
+}
+
+.social img {
+  width: 40px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+
+#logo {
+  width: 300px;
+  text-align: center;
+}
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+span.wave:hover {
+  cursor: pointer;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-card {
+    text-align: left;
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  .social img {
+    width: 30px;
+  }
+
+  #logo {
+    width: 200px;
+  }
+}
+</style>
