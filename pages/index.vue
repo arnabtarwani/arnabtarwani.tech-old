@@ -154,6 +154,12 @@ export default {}
   margin-bottom: 10px;
 }
 
+#about::after {
+  border-color: #ff3000;
+  background: #ff3000;
+  color: #ffffff;
+}
+
 #about:hover {
   color: #ffffff;
   background: #ff3000;
@@ -218,6 +224,7 @@ span.wave:hover {
 
   .social img {
     width: 30px;
+    margin-right: 10px;
   }
 
   #logo {
