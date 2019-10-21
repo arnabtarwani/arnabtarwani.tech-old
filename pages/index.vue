@@ -62,9 +62,23 @@
         <img src="~assets/email.png" alt="Email" />
       </a>
     </div>
+    <div class="nav-buttons text-left" style="margin-top: 5vh;">
+      <a href="/about">
+        <b-button id="about" variant="outline-primary">about</b-button>
+      </a>
+      <a href="/blog">
+        <b-button id="about" variant="outline-primary">blog</b-button>
+      </a>
+      <a href="/Projects">
+        <b-button id="about" variant="outline-primary">portfolio</b-button>
+      </a>
+      <a href="/resume">
+        <b-button id="about" variant="outline-primary">resume</b-button>
+      </a>
+    </div>
+    <p id="copyright">copyright © 2019. made with ❣ and nuxtjs.</p>
   </div>
 </template>
-
 <script>
 export default {}
 </script>
@@ -80,7 +94,7 @@ export default {}
 
 .navbar {
   text-align: center;
-  min-height: 25vh;
+  min-height: 22vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -131,6 +145,24 @@ export default {}
 #logo {
   width: 300px;
   text-align: center;
+}
+
+#about {
+  border-color: #ff3000;
+  color: #ff3000;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+
+#about:hover {
+  color: #ffffff;
+  background: #ff3000;
+}
+
+#copyright {
+  text-align: left;
+  margin-top: 10vh;
+  font-size: 1.1em;
 }
 
 span.wave {
@@ -190,6 +222,17 @@ span.wave:hover {
 
   #logo {
     width: 200px;
+  }
+
+  #copyright {
+    margin-top: 8vh;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  #about {
+    text-align: left;
+    margin: 5px auto;
   }
 }
 </style>
