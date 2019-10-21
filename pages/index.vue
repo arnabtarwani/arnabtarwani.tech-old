@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <vue-typer text="Hello World! I was registered locally!"></vue-typer>
     <div class="navbar">
       <b-navbar-brand class="mb-0">
         <a href="/">
@@ -32,13 +33,13 @@
       </p>
       <p style="font-size: 2.5em; margin-top: 3vh;">
         i'm
-        <b style="color:#FF3900;">arnab tarwani</b>, a data analyst/scientist
-        with a passion for data. Also, a web enthusiast and a developer in the
-        making. want to get in touch?
+        <b style="color:#FF3900;font-weight:500;">arnab tarwani</b>, a data
+        analyst/scientist with a passion for data. also, a web enthusiast and a
+        developer in the making.
       </p>
     </div>
     <div class="social text-left" style="margin-top: 5vh;">
-      <p style="font-size: 2em;">
+      <p>
         follow me on
         <img src="~assets/arrow.png" alt="arrow" style="width: 25px;" />
       </p>
@@ -99,7 +100,7 @@ export default {}
   text-align: left;
   justify-content: center;
   align-content: center;
-  width: 75%;
+  width: 74%;
   font-feature-settings: 'abvs';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -111,6 +112,14 @@ export default {}
 .profile-text {
   box-shadow: 0.2px 3px 5px rgba(0, 0, 0, 0.19),
     0px 0.5px 0.5px rgba(0, 0, 0, 0.23);
+}
+
+.social {
+  font-size: 2em;
+}
+
+.social p {
+  margin-bottom: 3px;
 }
 
 .social img {
@@ -165,6 +174,14 @@ span.wave:hover {
     text-align: left;
     width: 100%;
     font-size: 0.7em;
+  }
+
+  .social {
+    font-size: 1.5em;
+  }
+
+  .social p {
+    margin-bottom: 2px;
   }
 
   .social img {
