@@ -63,18 +63,18 @@
       </a>
     </div>
     <div class="nav-buttons text-left" style="margin-top: 5vh;">
-      <a href="/about">
+      <nuxt-link to="/About">
         <b-button id="about" variant="outline-primary">about</b-button>
-      </a>
-      <a href="/blog">
+      </nuxt-link>
+      <nuxt-link to="/Blog">
         <b-button id="about" variant="outline-primary">blog</b-button>
-      </a>
-      <a href="/Projects">
+      </nuxt-link>
+      <nuxt-link to="/Projects">
         <b-button id="about" variant="outline-primary">portfolio</b-button>
-      </a>
-      <a href="/resume">
+      </nuxt-link>
+      <nuxt-link to="/Resume">
         <b-button id="about" variant="outline-primary">resume</b-button>
-      </a>
+      </nuxt-link>
     </div>
     <p id="copyright">copyright © 2019. made with ❣ and nuxtjs.</p>
   </div>
