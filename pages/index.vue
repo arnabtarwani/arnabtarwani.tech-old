@@ -84,17 +84,21 @@ export default {}
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
 .container {
   display: block;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
 .navbar {
   text-align: center;
-  min-height: 22vh;
+  min-height: 18vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -114,7 +118,7 @@ export default {}
   text-align: left;
   justify-content: center;
   align-content: center;
-  width: 74%;
+  width: 60%;
   font-feature-settings: 'abvs';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
