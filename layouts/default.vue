@@ -4,6 +4,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  loading: {
+    color: 'blue',
+    height: '5px'
+  }
+}
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
 html {

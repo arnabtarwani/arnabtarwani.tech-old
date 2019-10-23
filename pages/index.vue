@@ -34,8 +34,8 @@
       <p style="font-size: 2em; margin-top: 3vh;">
         i'm
         <b style="color:#FF3900;font-weight:500;">arnab tarwani</b>, a data
-        analyst with a passion for data. also, a web enthusiast and a developer
-        in the making.
+        analyst with passion for data. also, a web enthusiast and a developer in
+        the making.
       </p>
     </div>
     <div class="social text-left" style="margin-top: 5vh;">
@@ -47,7 +47,7 @@
         <img src="~assets/medium-color.png" alt="Medium" />
       </a>
       <a href="https://github.com/arnabtarwani">
-        <img src="~assets/github-logo.png" alt="Github" />
+        <img src="~assets/github (1).png" alt="Github" />
       </a>
       <a href="https://www.linkedin.com/in/arnabtarwani/">
         <img src="~assets/linkedin-logo (2).png" alt="LinkedIn" />
@@ -79,8 +79,11 @@
     <p id="copyright">copyright © 2019. made with ❣️ and NuxtJS.</p>
   </div>
 </template>
+
 <script>
-export default {}
+export default {
+  loading: true
+}
 </script>
 
 <style>
@@ -94,6 +97,7 @@ export default {}
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   text-align: center;
+  -webkit-filter: blur(1);
 }
 
 .navbar {
