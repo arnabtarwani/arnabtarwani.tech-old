@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="navbar"></div>
-    <h3>The page is not ready yet!</h3>
+    <h3 style="margin-left: -35px;">the page is not ready yet!</h3>
     <div class="social text-center" style="margin-top: 1vh;">
       <p>
-        Meanwhile follow me on
+        meanwhile, follow me on
         <img src="~assets/arrow.png" alt="arrow" style="width: 25px;" />
       </p>
       <a href="https://medium.com/@arnab.tarwani">

@@ -27,15 +27,15 @@
       </b-navbar>
     </div>-->
     <div class="profile-card">
-      <p style="font-size: 2.5em;">
+      <p style="font-size: 2em;">
         hi, welcome!
         <span class="wave">🖐</span>
       </p>
-      <p style="font-size: 2.5em; margin-top: 3vh;">
+      <p style="font-size: 2em; margin-top: 3vh;">
         i'm
         <b style="color:#FF3900;font-weight:500;">arnab tarwani</b>, a data
-        analyst/scientist with a passion for data. also, a web enthusiast and a
-        developer in the making.
+        analyst with a passion for data. also, a web enthusiast and a developer
+        in the making.
       </p>
     </div>
     <div class="social text-left" style="margin-top: 5vh;">
@@ -63,20 +63,20 @@
       </a>
     </div>
     <div class="nav-buttons text-left" style="margin-top: 5vh;">
-      <nuxt-link to="/About">
+      <nuxt-link to="/about">
         <b-button id="about" variant="outline-primary">about</b-button>
       </nuxt-link>
-      <nuxt-link to="/Blog">
+      <nuxt-link to="/blog">
         <b-button id="about" variant="outline-primary">blog</b-button>
       </nuxt-link>
-      <nuxt-link to="/Projects">
+      <nuxt-link to="/projects">
         <b-button id="about" variant="outline-primary">portfolio</b-button>
       </nuxt-link>
-      <nuxt-link to="/Resume">
+      <nuxt-link to="/resume">
         <b-button id="about" variant="outline-primary">resume</b-button>
       </nuxt-link>
     </div>
-    <p id="copyright">copyright © 2019. made with ❣ and nuxtjs.</p>
+    <p id="copyright">copyright © 2019. made with ❣️ and NuxtJS.</p>
   </div>
 </template>
 <script>
@@ -98,7 +98,7 @@ export default {}
 
 .navbar {
   text-align: center;
-  min-height: 18vh;
+  min-height: 23vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -118,7 +118,7 @@ export default {}
   text-align: left;
   justify-content: center;
   align-content: center;
-  width: 60%;
+  width: 58%;
   font-feature-settings: 'abvs';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
