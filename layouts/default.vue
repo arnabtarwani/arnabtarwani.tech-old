@@ -62,7 +62,7 @@
         <img src="~assets/email.png" alt="Email" />
       </a>
     </div>
-    <div class="nav-buttons text-left" style="margin-top: 5vh;">
+    <div class="nav-buttons text-left">
       <nuxt-link to="/about">
         <b-button id="about" variant="outline-primary">about</b-button>
       </nuxt-link>
@@ -108,7 +108,7 @@ export default {
   text-align: center;
 }
 
-.nav-items {
+/* .nav-items {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -116,6 +116,10 @@ export default {
   list-style: none;
   color: #ff370075;
   font-size: 2em;
+} */
+
+.nav-buttons {
+  margin-top: 5vh;
 }
 
 .profile-card {
@@ -238,6 +242,10 @@ span.wave:hover {
   .social img {
     width: 30px;
     margin-right: 10px;
+  }
+
+  .nav-buttons {
+    margin-top: 2.5vh;
   }
 
   #logo {
