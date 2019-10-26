@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header />
     <div class="navbar"></div>
     <h3 style="margin-left: -35px;">the page is not ready yet!</h3>
     <div class="social text-center" style="margin-top: 1vh;">
@@ -28,6 +29,16 @@
     </div>
   </div>
 </template>
+
+<script>
+import Header from '~/components/header.vue'
+export default {
+  layout: 'default',
+  components: {
+    Header
+  }
+}
+</script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
@@ -60,7 +71,7 @@
 
 .navbar {
   text-align: center;
-  min-height: 38vh;
+  min-height: 28vh;
   justify-content: center;
   align-items: center;
   text-align: center;

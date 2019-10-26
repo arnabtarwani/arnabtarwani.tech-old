@@ -1,65 +1,258 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="container">
+    <vue-typer text="Hello World! I was registered locally!"></vue-typer>
+    <div class="navbar">
+      <b-navbar-brand class="mb-0">
+        <a href="/">
+          <b-img id="logo" src="~assets/arnab31png.png" fluid />
+        </a>
+      </b-navbar-brand>
+    </div>
+    <!-- <div class="nav-items">
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar toggleable="lg" variant="faded" type="dark">
+        <b-collapse id="nav-collapse" is-nav>
+          <b-nav-item>
+            <nuxt-link to="/about">about</nuxt-link></b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/blog">blog</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/projects">projects</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/contact">contact</nuxt-link>
+          </b-nav-item>
+        </b-collapse>
+      </b-navbar>
+    </div>-->
+    <div class="profile-card">
+      <p style="font-size: 2em;">
+        hi, welcome!
+        <span class="wave">🖐</span>
+      </p>
+      <p style="font-size: 2em; margin-top: 3vh;">
+        i'm
+        <b style="color:#FF3900;font-weight:500;">arnab tarwani</b>, a data
+        analyst with passion for data. also, a web enthusiast and a developer in
+        the making.
+      </p>
+    </div>
+    <div class="social text-left" style="margin-top: 5vh;">
+      <p>
+        follow me on
+        <img src="~assets/arrow.png" alt="arrow" style="width: 25px;" />
+      </p>
+      <a href="https://medium.com/@arnab.tarwani">
+        <img src="~assets/medium-color.png" alt="Medium" />
+      </a>
+      <a href="https://github.com/arnabtarwani">
+        <img src="~assets/github (1).png" alt="Github" />
+      </a>
+      <a href="https://www.linkedin.com/in/arnabtarwani/">
+        <img src="~assets/linkedin-logo (2).png" alt="LinkedIn" />
+      </a>
+      <a href="https://twitter.com/arnabtarwani">
+        <img src="~assets/twitter (1).png" alt="Twitter" />
+      </a>
+      <a href="https://instagram.com/arnabtarwani">
+        <img src="~assets/instagram.png" alt="Instagram" />
+      </a>
+      <a href="mailto:arnab.tarwani@ucdconnect.ie">
+        <img src="~assets/email.png" alt="Email" />
+      </a>
+    </div>
+    <div class="nav-buttons text-left" style="margin-top: 5vh;">
+      <nuxt-link to="/about">
+        <b-button id="about" variant="outline-primary">about</b-button>
+      </nuxt-link>
+      <nuxt-link to="/blog">
+        <b-button id="about" variant="outline-primary">blog</b-button>
+      </nuxt-link>
+      <nuxt-link to="/projects">
+        <b-button id="about" variant="outline-primary">portfolio</b-button>
+      </nuxt-link>
+      <nuxt-link to="/resume">
+        <b-button id="about" variant="outline-primary">resume</b-button>
+      </nuxt-link>
+    </div>
+    <p id="copyright">copyright © 2019. made with ❣️ and NuxtJS.</p>
   </div>
 </template>
 
 <script>
 export default {
-  loading: {
-    color: 'blue',
-    height: '5px'
-  }
+  loading: true
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
+
+.container {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  -webkit-filter: blur(1);
+}
+
+.navbar {
+  text-align: center;
+  min-height: 23vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-items {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+  color: #ff370075;
+  font-size: 2em;
+}
+
+.profile-card {
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+  width: 58%;
+  font-feature-settings: 'abvs';
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 10px #000;
+  /* box-shadow: 0.2px 3px 5px rgba(0, 0, 0, 0.19),
+    0px 0.5px 0.5px rgba(0, 0, 0, 0.23); */
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.profile-text {
+  box-shadow: 0.2px 3px 5px rgba(0, 0, 0, 0.19),
+    0px 0.5px 0.5px rgba(0, 0, 0, 0.23);
 }
 
-.button--green {
+.social {
+  font-size: 2em;
+}
+
+.social p {
+  margin-bottom: 3px;
+}
+
+.social img {
+  width: 40px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+
+/* .social img:hover {
+  filter: brightness(75%) sepia(10) saturate(80) hue-rotate(10.5deg)
+    opacity(85.2%);
+} */
+
+#logo {
+  width: 300px;
+  text-align: center;
+}
+
+#about {
+  border-color: #ff3000;
+  color: #ff3000;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+
+#about::after {
+  border-color: #ff3000;
+  background: #ff3000;
+  color: #ffffff;
+}
+
+#about:hover {
+  color: #ffffff;
+  background: #ff3000;
+}
+
+#copyright {
+  text-align: left;
+  margin-top: 10vh;
+  font-size: 1.1em;
+}
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+span.wave:hover {
+  cursor: pointer;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+@media screen and (max-width: 480px) {
+  .profile-card {
+    text-align: left;
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  .social {
+    font-size: 1.5em;
+  }
+
+  .social p {
+    margin-bottom: 2px;
+  }
+
+  .social img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  #copyright {
+    margin-top: 8vh;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  #about {
+    text-align: left;
+    margin: 5px auto;
+  }
 }
 </style>
