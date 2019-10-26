@@ -76,4 +76,46 @@ export default {
   align-items: center;
   text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-left: 20px;
+  }
+
+  .profile-card {
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .social {
+    font-size: 1.3em;
+  }
+
+  .social p {
+    margin-bottom: 2px;
+  }
+
+  .social img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  #copyright {
+    margin-top: 8vh;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  #about {
+    text-align: left;
+    margin: 5px auto;
+  }
+}
 </style>
