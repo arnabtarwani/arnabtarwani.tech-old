@@ -1,3 +1,12 @@
+const path = require('path');
+var glob = require('glob');
+let files = glob.sync('**/*.md', {
+  cwd: 'content'
+});
+const markdownPaths = ['blog']
+
+
+
 export default {
   mode: 'universal',
   /*
@@ -22,14 +31,14 @@ export default {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
-    }]
+    }],
   },
   /*
    ** Customize the progress-bar color
    */
   loading: {
     color: '#ff3900',
-    height: '3px',
+    height: '1px',
     throttle: 0,
     duration: '5000',
     continuous: true
@@ -89,8 +98,42 @@ export default {
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.md$/,
-        use: ['raw-loader']
+        include: path.resolve(__dirname, "content"),
+        //use: ['raw-loader'],
+        loader: 'frontmatter-markdown-loader'
       });
     }
+  },
+  generate: {
+    routes: dynamicMarkdownRoutes(),
   }
 }
+
+// function getSlugs(post, _) {
+//   let slug = post.substr(0, post.lastIndexOf('.'));
+//   return `/blog/${slug}`;
+// }
+
+function dynamicMarkdownRoutes() {
+  return [].concat(
+    ...markdownPaths.map(mdPath => {
+      return glob.sync(`${mdPath}/*.md`, {
+          cwd: 'content'
+        })
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
+    })
+  );
+}
+
+// function getDynamicPaths(urlFilepathTable) {
+//   return [].concat(
+//     ...Object.keys(urlFilepathTable).map(url => {
+//       var filepathGlob = urlFilepathTable[url];
+//       return glob
+//         .sync(filepathGlob, {
+//           cwd: 'content'
+//         })
+//         .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
+//     })
+//   );
+// }

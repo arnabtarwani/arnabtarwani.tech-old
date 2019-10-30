@@ -27,6 +27,7 @@
         <img src="~assets/email.png" alt="Email" />
       </a>
     </div>
+    <nuxt />
   </div>
 </template>
 
