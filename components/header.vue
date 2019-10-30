@@ -82,4 +82,8 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.nav-buttons {
+  font-family: 'Poppins', sans-serif;
+}
 </style>
