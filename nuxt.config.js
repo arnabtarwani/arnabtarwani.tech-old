@@ -105,7 +105,7 @@ export default {
     }
   },
   generate: {
-    routes: dynamicMarkdownRoutes(),
+    routes: dynamicMarkdownRoutes()
   }
 }
 

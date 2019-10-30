@@ -1,5 +1,8 @@
 <template>
   <div class="nav-buttons text-center" style="margin-top: 5vh;">
+    <!-- <nuxt-link to="/">
+      <b-button id="about" variant="outline-primary">home</b-button>
+    </nuxt-link> -->
     <nuxt-link to="/about">
       <b-button id="about" variant="outline-primary">about</b-button>
     </nuxt-link>
@@ -12,7 +15,7 @@
     <nuxt-link to="/resume">
       <b-button id="about" variant="outline-primary">resume</b-button>
     </nuxt-link>
-    <div style="font-size: 1em; color:#ff3900; margin-top: 1vh;">
+    <div style="font-size: 1em; color:#ff3900; margin-top: 0.2vh;">
       <font-awesome-icon :icon="['fas', 'long-arrow-alt-left']" />
       <nuxt-link to="/" style="color: #ff3900; text-decoration: none;"
         >back to homepage</nuxt-link

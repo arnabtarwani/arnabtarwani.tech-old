@@ -1,14 +1,17 @@
 <template>
-  <div class="container">
+  <div class="container text-left">
     <h1 class="title">{{ post.attributes.title }}</h1>
-    <h2 class="subtitle">{{ post.attributes.date }}</h2>
+    <p class="subtitle">{{ post.attributes.date }}</p>
+    <!-- <div class="subtitle">
+      Published on {{ attributes.ctime }} by {{ attributes.author }}
+    </div> -->
     <!-- <div class="columns">
       <div class="column is-half is-offset-one-quarter">
         <figure class="image">
           <img :src="imgSrc" />
         </figure>
       </div>
-    </div> -->
+    </div>-->
     <!-- eslint-disable-next-line -->
     <div class="content" v-html="post.html" />
   </div>
@@ -33,3 +36,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  margin-top: 5vh;
+}
+
+.content {
+  margin-top: 2vh;
+  padding: 5px;
+  font-size: 1.3em;
+}
+</style>
