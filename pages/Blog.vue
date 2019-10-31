@@ -46,6 +46,7 @@ export default {
 }
 
 .title-links {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #ff3900;
   font-weight: 400;
