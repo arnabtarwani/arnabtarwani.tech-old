@@ -7,15 +7,11 @@
       </div>
       <div v-else>
         <div v-for="post in posts" :key="post.attributes.title" class="columns">
-          <p class="title is-4">
-            <nuxt-link :to="post._path" class="title-links">
-              {{ post.attributes.title }}
-            </nuxt-link>
-          </p>
+          <p class="date">{{ post.attributes.date }}</p>
+          <nuxt-link :to="post._path" class="title-links">
+            {{ post.attributes.title }}
+          </nuxt-link>
           <p class="subtitle is-6">{{ post.attributes.tags }}</p>
-          <div class="content">
-            <p>{{ post.attributes.date }}</p>
-          </div>
         </div>
       </div>
     </section>
@@ -40,6 +36,13 @@ export default {
   margin-top: 5vh;
 }
 
+.date {
+  font-size: 0.5em;
+  margin: 0 auto;
+  text-align: start;
+  padding: 0 auto;
+}
+
 .posts {
   font-size: 2.2em;
   text-decoration: none;
@@ -48,11 +51,28 @@ export default {
 .title-links {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
+  text-align: center;
   color: #ff3900;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 .title-links:hover {
   color: #000000;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-top: 2vh;
+    text-align: justify;
+  }
+
+  .markdown-body {
+    padding: 15px;
+  }
+
+  .posts {
+    font-size: 1.2em;
+    text-decoration: none;
+  }
 }
 </style>

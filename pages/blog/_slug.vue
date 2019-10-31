@@ -58,6 +58,10 @@ export default {
   font-size: 1.3em;
 }
 
+.subtitle {
+  font-size: 1em;
+}
+
 @media (max-width: 767px) {
   .container {
     margin-top: 2vh;

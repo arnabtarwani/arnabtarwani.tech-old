@@ -1,6 +1,6 @@
 ---
 title: Initiate. This is my advice to all you out there!
-Created: Oct 31, 2019 12:53 AM
+date: Oct 31, 2019
 URL: https://writingcooperative.com/initiate-this-is-my-advice-to-all-you-out-there-fab16cce8df3
 Updated: Oct 31, 2019 12:53 AM
 ---
