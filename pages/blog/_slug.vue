@@ -1,10 +1,10 @@
 <template>
-  <div class="container text-left">
+  <div class="container markdown-body text-left">
     <h1 class="title">{{ post.attributes.title }}</h1>
     <p class="subtitle">{{ post.attributes.date }}</p>
     <!-- <div class="subtitle">
       Published on {{ attributes.ctime }} by {{ attributes.author }}
-    </div> -->
+    </div>-->
     <!-- <div class="columns">
       <div class="column is-half is-offset-one-quarter">
         <figure class="image">
@@ -38,13 +38,27 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css');
 .container {
   margin-top: 5vh;
 }
 
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+
 .content {
   margin-top: 2vh;
-  padding: 5px;
   font-size: 1.3em;
 }
 </style>

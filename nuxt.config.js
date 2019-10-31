@@ -46,7 +46,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'github-markdown-css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */

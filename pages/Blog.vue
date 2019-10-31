@@ -25,7 +25,7 @@
 <script>
 export default {
   async asyncData() {
-    const context = await require.context('~/content/blog', true, /\.md$/)
+    const context = await require.context('~/content/', true, /\.md$/)
     const posts = await context.keys().map((key) => ({
       ...context(key),
       _path: `/${key.replace('.md', '').replace('./', '')}`
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 30vh;
+  margin-top: 5vh;
 }
 
 .posts {
