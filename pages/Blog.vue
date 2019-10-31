@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <section class="posts">
-      <div v-for="post in posts" :key="post.attributes.title" class="columns">
-        <div v-if="post == undefined" class="column">
-          <h1>There are currently no posts available!</h1>
-          <h1>Check back in sometime!</h1>
-        </div>
-        <div v-else>
+      <div v-if="posts == 0" class="column">
+        <h3>There are currently no posts available!</h3>
+        <h3>Check back in sometime!</h3>
+      </div>
+      <div v-else>
+        <div v-for="post in posts" :key="post.attributes.title" class="columns">
           <p class="title is-4">
             <nuxt-link :to="post._path" class="title-links">
               {{ post.attributes.title }}
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 5vh;
+  margin-top: 30vh;
 }
 
 .posts {
