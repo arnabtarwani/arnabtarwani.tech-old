@@ -7,11 +7,11 @@
       </div>
       <div v-else>
         <div v-for="post in posts" :key="post.attributes.title" class="columns">
-          <div class="date">{{ post.attributes.date }}</div>
           <div>
             <nuxt-link :to="post._path" class="title-links">
               {{ post.attributes.title }}
             </nuxt-link>
+            <div class="date">{{ post.attributes.date }}</div>
           </div>
           <p class="excerpt">
             {{ post.attributes.excerpt }}
@@ -19,6 +19,7 @@
               >read more</nuxt-link
             >
           </p>
+          <hr />
         </div>
       </div>
     </section>
@@ -40,7 +41,7 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 .columns {
@@ -75,7 +76,7 @@ export default {
 
 @media (max-width: 767px) {
   .container {
-    margin-top: 2vh;
+    margin-top: 4vh;
     text-align: justify;
   }
 

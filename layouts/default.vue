@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <hr style="margin-left:21%;margin-right:21%;text-align:center;" />
     <nuxt />
   </div>
 </template>
@@ -13,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+header {
+  position: sticky;
+  position: -webkit-sticky;
+}
+</style>
