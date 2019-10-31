@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <hr />
     <section class="posts">
       <div v-if="posts == 0" class="column">
         <h3>There are currently no posts available!</h3>
@@ -41,7 +42,7 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 4vh;
+  margin-top: 0vh;
 }
 
 .columns {

@@ -1,5 +1,6 @@
 <template>
   <div class="container markdown-body">
+    <hr style="height:0.1em;" />
     <h1 class="title">{{ post.attributes.title }}</h1>
     <p class="subtitle">{{ post.attributes.date }}</p>
     <!-- <div class="subtitle">
@@ -39,8 +40,11 @@ export default {
 
 <style scoped>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css');
+* {
+}
+
 .container {
-  margin-top: 4vh;
+  margin-top: 3vh;
   font-family: 'Poppins', sans-serif;
   text-align: justify;
 }
@@ -50,7 +54,7 @@ export default {
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 45px;
+  padding: 20px;
 }
 
 .content {
