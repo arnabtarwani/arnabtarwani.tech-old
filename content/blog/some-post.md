@@ -1,6 +1,7 @@
 ---
 title: Initiate. This is my advice to all you out there!
 date: Oct 31, 2019
+excerpt: 'Here is the tragedy: when you are the victim of depression, not only do you feel utterly helpless and abandoned by the world, you also know that very few people can understand, or even begin to believe, that life can be this painful.'
 URL: https://writingcooperative.com/initiate-this-is-my-advice-to-all-you-out-there-fab16cce8df3
 Updated: Oct 31, 2019 12:53 AM
 ---

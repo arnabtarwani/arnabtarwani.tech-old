@@ -7,11 +7,18 @@
       </div>
       <div v-else>
         <div v-for="post in posts" :key="post.attributes.title" class="columns">
-          <p class="date">{{ post.attributes.date }}</p>
-          <nuxt-link :to="post._path" class="title-links">
-            {{ post.attributes.title }}
-          </nuxt-link>
-          <p class="subtitle is-6">{{ post.attributes.tags }}</p>
+          <div class="date">{{ post.attributes.date }}</div>
+          <div>
+            <nuxt-link :to="post._path" class="title-links">
+              {{ post.attributes.title }}
+            </nuxt-link>
+          </div>
+          <p class="excerpt">
+            {{ post.attributes.excerpt }}
+            <nuxt-link :to="post._path" class="title-links"
+              >read more</nuxt-link
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -36,11 +43,18 @@ export default {
   margin-top: 5vh;
 }
 
+.columns {
+  text-align: justify;
+}
+
 .date {
   font-size: 0.5em;
-  margin: 0 auto;
-  text-align: start;
-  padding: 0 auto;
+  margin: 0px auto;
+}
+
+.excerpt {
+  font-size: 0.6em;
+  margin: 0px auto;
 }
 
 .posts {
@@ -51,7 +65,6 @@ export default {
 .title-links {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  text-align: center;
   color: #ff3900;
   font-weight: 450;
 }
@@ -71,7 +84,7 @@ export default {
   }
 
   .posts {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
   }
 }
