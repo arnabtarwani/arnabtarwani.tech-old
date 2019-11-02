@@ -5,9 +5,9 @@ excerpt: 'Here is the tragedy: when you are the victim of depression, not only d
 URL: https://writingcooperative.com/initiate-this-is-my-advice-to-all-you-out-there-fab16cce8df3
 Updated: Oct 31, 2019 12:53 AM
 ---
+![Initiate](https://miro.medium.com/max/1920/1*l-95TSlQ0nkfRfp0SxG0fA.jpeg)
 
 > Here is the tragedy: when you are the victim of depression, not only do you feel utterly helpless and abandoned by the world, you also know that very few people can understand, or even begin to believe, that life can be this painful. There is nothing I can think of that is quite as isolating as this. — Giles Andreae
-
 
 I’ve been reading a plethora of articles day in and day out on Medium, but never thought to write my own. I want to share my thoughts and feelings and thus it’s high time. With this article, the title will make more sense, I’m initiating a journey to enlighten people with my knowledge and beliefs.
 
