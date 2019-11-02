@@ -76,7 +76,7 @@ export default {
 }
 
 .title-links:hover {
-  color: #000000;
+  color: #b92200;
 }
 
 @media (max-width: 767px) {
