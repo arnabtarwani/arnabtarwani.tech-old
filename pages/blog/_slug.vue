@@ -40,8 +40,6 @@ export default {
 
 <style scoped>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css');
-* {
-}
 
 .container {
   margin-top: 3vh;

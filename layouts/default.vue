@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Header />
     <nuxt />
   </div>
@@ -18,5 +18,9 @@ export default {
 header {
   position: sticky;
   position: -webkit-sticky;
+}
+
+.container::-webkit-scrollbar {
+  background-color: rgb(27, 27, 27);
 }
 </style>

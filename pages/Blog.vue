@@ -41,8 +41,11 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
 .container {
   margin-top: 0vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .columns {
@@ -69,6 +72,7 @@ export default {
   text-decoration: none;
   color: #ff3900;
   font-weight: 450;
+  text-align: end;
 }
 
 .title-links:hover {
