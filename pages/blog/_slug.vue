@@ -65,6 +65,10 @@ export default {
 }
 
 @media (max-width: 767px) {
+  .title {
+    text-align: initial;
+    text-align-last: left;
+  }
   .container {
     margin-top: 2vh;
   }

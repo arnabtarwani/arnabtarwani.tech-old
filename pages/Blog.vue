@@ -82,7 +82,7 @@ export default {
 @media (max-width: 767px) {
   .container {
     margin-top: 4vh;
-    text-align: justify;
+    text-align: left;
   }
 
   .markdown-body {
