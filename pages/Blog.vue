@@ -1,5 +1,16 @@
 <template>
   <div class="container">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKZXZ23RN2"></script>
+    <script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'G-BKZXZ23RN2')
+    </script>
     <hr />
     <section class="posts">
       <div v-if="posts == 0" class="column">
@@ -9,16 +20,12 @@
       <div v-else>
         <div v-for="post in posts" :key="post.attributes.title" class="columns">
           <div>
-            <nuxt-link :to="post._path" class="title-links">
-              {{ post.attributes.title }}
-            </nuxt-link>
+            <nuxt-link :to="post._path" class="title-links">{{ post.attributes.title }}</nuxt-link>
             <div class="date">{{ post.attributes.date }}</div>
           </div>
           <p class="excerpt">
             {{ post.attributes.excerpt }}
-            <nuxt-link :to="post._path" class="title-links"
-              >read more</nuxt-link
-            >
+            <nuxt-link :to="post._path" class="title-links">read more</nuxt-link>
           </p>
           <hr />
         </div>
