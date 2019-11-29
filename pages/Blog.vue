@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKZXZ23RN2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145293740-1"></script>
     <script>
   window.dataLayer = window.dataLayer || []
   function gtag() {
@@ -9,8 +9,9 @@
   }
   gtag('js', new Date())
 
-  gtag('config', 'G-BKZXZ23RN2')
+  gtag('config', 'UA-145293740-1')
     </script>
+
     <hr />
     <section class="posts">
       <div v-if="posts == 0" class="column">

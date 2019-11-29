@@ -1,16 +1,15 @@
 <template>
   <div class="nav-buttons text-center" style="margin-top: 5vh;">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKZXZ23RN2"></script>
-    <script>
-  window.dataLayer = window.dataLayer || []
-  function gtag() {
-    dataLayer.push(arguments)
-  }
-  gtag('js', new Date())
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145293740-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  gtag('config', 'G-BKZXZ23RN2')
-    </script>
+  gtag('config', 'UA-145293740-1');
+</script>
+
     <!-- <nuxt-link to="/">
       <b-button id="about" variant="outline-primary">home</b-button>
     </nuxt-link>-->

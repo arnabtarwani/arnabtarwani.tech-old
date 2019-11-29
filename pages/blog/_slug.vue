@@ -1,7 +1,7 @@
 <template>
   <div class="container markdown-body">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKZXZ23RN2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145293740-1"></script>
     <script>
   window.dataLayer = window.dataLayer || []
   function gtag() {
@@ -9,8 +9,9 @@
   }
   gtag('js', new Date())
 
-  gtag('config', 'G-BKZXZ23RN2')
+  gtag('config', 'UA-145293740-1')
     </script>
+
     <hr style="height:0.1em;" />
     <h1 class="title">{{ post.attributes.title }}</h1>
     <p class="subtitle">{{ post.attributes.date }}</p>
