@@ -87,7 +87,7 @@
         <b-button id="about" variant="outline-primary">resume</b-button>
       </nuxt-link>
     </div>
-    <p id="copyright">copyright © 2020. made with ❣️ and NuxtJS.</p>
+    <p id="copyright">copyright © {{new Date().getFullYear()}}. made with ❣️ and NuxtJS.</p>
     <nuxt />
   </div>
 </template>
