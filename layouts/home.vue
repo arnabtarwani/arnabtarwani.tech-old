@@ -13,11 +13,6 @@
 
     <vue-typer text="Hello World! I was registered locally!"></vue-typer>
     <div class="navbar">
-      <b-navbar-brand class="mb-0">
-        <a href="/">
-          <b-img id="logo" src="~assets/arnab31png.png" fluid />
-        </a>
-      </b-navbar-brand>
     </div>
     <!-- <div class="nav-items">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
