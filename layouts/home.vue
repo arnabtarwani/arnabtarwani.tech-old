@@ -40,7 +40,7 @@
       <p style="font-size: 2em; margin-top: 3vh;">
         i'm
         <b style="color:#FF3900;font-weight:500;">arnab tarwani</b>, a data
-        analyst with passion for data. also, a web enthusiast and a developer in
+        scientist with an immense passion for data. also, a web enthusiast and a developer in
         the making.
       </p>
     </div>
