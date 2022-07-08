@@ -39,7 +39,7 @@
     "file-loader": "^4.2.0",
     "frontmatter-markdown-loader": "^2.3.0",
     "glob": "^7.1.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "prettier": "^1.18.2"
   }
 }
